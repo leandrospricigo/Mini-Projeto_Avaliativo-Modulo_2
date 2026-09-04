@@ -95,8 +95,8 @@ mini_projeto_fase2_1/
 
 ```bash
 # Clonar repositório
-git clone <URL_DO_REPOSITORIO>
-cd mini_projeto_fase2_1
+git clone https://github.com/leandrospricigo/Mini-Projeto_Avaliativo-Módulo_2.git
+cd Mini-Projeto_Avaliativo-Módulo_2
 
 # Instalar dependências necessárias
 pip install tensorflow opencv-python matplotlib seaborn scikit-learn notebook gdown
