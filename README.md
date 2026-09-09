@@ -19,7 +19,7 @@
 - **Link do Vídeo de Apresentação no Google Drive (Modo Leitor):** `[INSERIR_AQUI_O_LINK_DO_SEU_VIDEO_NO_GOOGLE_DRIVE]`
 - **Link da Pasta da Solução no Google Drive (Modo Leitor):** `[INSERIR_AQUI_O_LINK_DA_PASTA_NO_GOOGLE_DRIVE]`
 - **Repositório Oficial no GitHub:** [https://github.com/leandrospricigo/Mini-Projeto_Avaliativo-Modulo_2](https://github.com/leandrospricigo/Mini-Projeto_Avaliativo-Modulo_2)
-- **Roteiro Técnico Completo (< 5 min):** Consulte o arquivo [ROTEIRO_VIDEO.md](ROTEIRO_VIDEO.md) contendo o script palavra por palavra, instruções de tela e respostas aos 4 questionamentos obrigatórios do item 4.1.
+- **Roteiro da Apresentação em Vídeo (< 5 min):** Abordar os 4 questionamentos do item 4.1 do edital: (1) Objetivo do sistema e funcionamento no notebook; (2) Insights das técnicas clássicas de OpenCV (Blur, Canny, Morfologia); (3) Estrutura da CNN e Data Augmentation; (4) Diagnóstico das curvas de Loss (saudável vs overfitting).
 
 ---
 
@@ -83,7 +83,6 @@ Mini-Projeto_Avaliativo-Modulo_2/
 ├── scripts/
 │   └── build_notebook.py               # Gerador de notebook estruturado
 ├── main.py                             # Script orquestrador CLI
-├── ROTEIRO_VIDEO.md                    # Roteiro passo a passo para a gravação do vídeo (< 5 min)
 ├── README.md                           # Documentação técnica do projeto
 └── .gitignore
 ```
