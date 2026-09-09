@@ -80,8 +80,6 @@ Mini-Projeto_Avaliativo-Modulo_2/
 │       ├── sprint6_loss_and_accuracy.png
 │       ├── sprint6_confusion_matrix.png
 │       └── sprint6_sample_predictions.png
-├── scripts/
-│   └── build_notebook.py               # Gerador de notebook estruturado
 ├── main.py                             # Script orquestrador CLI
 ├── README.md                           # Documentação técnica do projeto
 └── .gitignore
