@@ -11,10 +11,15 @@
 
 ---
 
-## 📹 Apresentação Técnica em Vídeo (Critério 1 - Até 3,00 pts)
+## 📹 Instruções de Entrega Oficial (AVA / Google Drive)
 
-- **Link do Vídeo no Google Drive (Modo Leitor):** `[INSERIR_AQUI_O_LINK_DO_SEU_VIDEO_NO_GOOGLE_DRIVE]`
-- **Roteiro Detalhado de Gravação (< 5 min):** Consulte o arquivo [ROTEIRO_VIDEO.md](ROTEIRO_VIDEO.md) para a transcrição completa de falas, indicações de tela e respostas aos 4 questionamentos obrigatórios da banca.
+> [!IMPORTANT]
+> Conforme o item 3 do edital (**Resultados Esperados**), os links em **modo leitor para qualquer pessoa com o link** devem ser submetidos no AVA na tarefa **Módulo 2 - Mini-Projeto Avaliativo** até **14/09/2026 às 22h**.
+
+- **Link do Vídeo de Apresentação no Google Drive (Modo Leitor):** `[INSERIR_AQUI_O_LINK_DO_SEU_VIDEO_NO_GOOGLE_DRIVE]`
+- **Link da Pasta da Solução no Google Drive (Modo Leitor):** `[INSERIR_AQUI_O_LINK_DA_PASTA_NO_GOOGLE_DRIVE]`
+- **Repositório Oficial no GitHub:** [https://github.com/leandrospricigo/Mini-Projeto_Avaliativo-Modulo_2](https://github.com/leandrospricigo/Mini-Projeto_Avaliativo-Modulo_2)
+- **Roteiro Técnico Completo (< 5 min):** Consulte o arquivo [ROTEIRO_VIDEO.md](ROTEIRO_VIDEO.md) contendo o script palavra por palavra, instruções de tela e respostas aos 4 questionamentos obrigatórios do item 4.1.
 
 ---
 
@@ -52,7 +57,7 @@ O dataset utilizado contém imagens reais de peças metálicas circulares:
 ## 📂 Estrutura do Repositório
 
 ```text
-mini_projeto_fase2_1/
+Mini-Projeto_Avaliativo-Modulo_2/
 ├── dataset/
 │   └── casting_512x512/
 │       ├── def_front/                  # 781 imagens de peças com defeito
@@ -95,11 +100,11 @@ mini_projeto_fase2_1/
 
 ```bash
 # Clonar repositório
-git clone https://github.com/leandrospricigo/Mini-Projeto_Avaliativo-Módulo_2.git
-cd Mini-Projeto_Avaliativo-Módulo_2
+git clone https://github.com/leandrospricigo/Mini-Projeto_Avaliativo-Modulo_2.git
+cd Mini-Projeto_Avaliativo-Modulo_2
 
 # Instalar dependências necessárias
-pip install tensorflow opencv-python matplotlib seaborn scikit-learn notebook gdown
+pip install -r requirements.txt
 ```
 
 ### 3. Download Automático do Dataset (caso não esteja presente)
@@ -137,8 +142,18 @@ jupyter lab notebooks/pipeline_industrial.ipynb
 ## 🚀 Sprints Industriais do Projeto
 
 ### Sprint 1: Configuração, Versionamento e Dados
-- **Versionamento Git:** Inicialização de repositório, branch `main` e `develop`, commits semânticos por sprint (`feat`, `chore`, `docs`).
-- **Configuração de Dados:** Organização das pastas `def_front` (781) e `ok_front` (519), totalizando 1.300 imagens com resolução de 512x512 pixels.
+- **Versionamento Git Estruturado (Critério 2):** Organização completa com branches temáticas para cada etapa do desenvolvimento industrial:
+  - `main`: Branch estável para entrega e homologação final do projeto.
+  - `develop`: Branch de integração contínua entre as funcionalidades.
+  - `feature/sprint-1-config`: Configuração inicial do ambiente, dependências e dados.
+  - `feature/sprint-2-3-opencv`: Pipeline de visão clássica com OpenCV (escala de cinza, blur, bordas e morfologia).
+  - `feature/sprint-4-5-6-cnn-audit`: Ingestão Keras, data augmentation, arquitetura CNN e auditoria gráfica.
+  - Tag `v1.0.0`: Versão oficial de entrega final.
+- **Comando para sincronização completa de branches e tags:**
+  ```bash
+  git push origin --all && git push origin --tags
+  ```
+- **Configuração de Dados:** Organização das pastas `def_front` (781 imagens) e `ok_front` (519 imagens), totalizando 1.300 imagens com resolução de 512x512 pixels.
 - **Sementes de Reprodutibilidade:** `SEED = 42` fixado no TensorFlow e NumPy.
 
 ---
